@@ -1,0 +1,5 @@
+-- 5
+SELECT DISTINCT lno AS loanNo
+FROM borrower
+GROUP BY lno
+HAVING COUNT(DISTINCT cname) >= 2;
